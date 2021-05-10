@@ -1,0 +1,9 @@
+{% extends "foodypanda/layout.html" %}
+{% block body %}
+    <h1>Items</h1>
+    <ol>
+        {% for ele in menu %}
+            <li>{{ ele }}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}
