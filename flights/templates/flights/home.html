@@ -1,0 +1,11 @@
+{% extends  "flights/layout.html" %}
+{% block body %}
+<h1 align="center"> Flight List</h1>
+    <ul>
+        {% for flight in flight_list %}
+            <li>{{ flight }}</li>
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}
