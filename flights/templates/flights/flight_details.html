@@ -1,0 +1,14 @@
+{% extends "flights/layout.html" %}
+{% block body %}
+    <h1>FLight Details - {{ flight_details }}</h1>
+    <ul>
+        <li> Departure: {{ flight_details.depart }}</li>
+        <li> Arrival: {{ flight_details.arrive }}  </li>
+        <li> Duration: {{ flight_details.duration }}</li>
+    </ul>
+
+    <a href="{% url 'flight-home' %}">
+    Go to Home Page
+    </a>
+
+{% endblock %}
