@@ -1,6 +1,11 @@
 from django.shortcuts import render
-from .models import flights
+from .models import flights, airport
 # Create your views here.
+
+def airport_home(request):
+    return render(request, "flights/airport_home.html",{
+        'air_home':airport.objects.all()
+    })
 
 def home(request):
     return render(request, "flights/home.html", {

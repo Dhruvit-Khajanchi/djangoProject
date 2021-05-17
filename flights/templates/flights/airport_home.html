@@ -1,0 +1,8 @@
+{% extends "flights/layout.html" %}
+{% block body %}
+    <h1>Airport Home</h1>
+    <ul>{% for air in air_home %}
+        <li>{{ air }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
