@@ -21,5 +21,6 @@ urlpatterns = [
     path('introduction_app/', include("introduction_app.urls")),
     path('independence/', include("independence.urls")),
     path('foodypanda/', include("foodypanda.urls")),
-    path('flights/', include("flights.urls"))
+    path('flights/', include("flights.urls")),
+    path('employees/', include("employees.urls"))
 ]

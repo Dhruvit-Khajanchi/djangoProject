@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'introduction_app',
     'independence',
+    'employees',
     'foodypanda',
     'flights',
     'django.contrib.admin',
